@@ -63,7 +63,6 @@ Jogo_Fullstack/
    │   ├── oJogo.js/                                          # Arquivo JavaScript para portar a estrutura do jogo
    │   ├── Status.js/                                         # Arquivo JavaScript para os elementos do personagem principal
    ├── Frontend/                                              # Pasta com os códigos de frontend
-   │   ├── pages/                                             # Páginas do site/aplicação
    │   ├── style.css/                                         # Arquivos CSS para estilização
    │   ├── index.html                                         # Página principal do projeto
    readme.md                                                  # Documentação principal do projeto
