@@ -56,9 +56,9 @@ Jogo_Fullstack/
    ├── V4                                                     # Quarta versão do jogo
    ├── Final/                                                 # Versão final do jogo
    mídia/                                                     # Pasta para armazenar imagens utilizadas no projeto
-   ├── Audios                                                 #Audios utilizados no projeto
-   ├── Imagens                                                #Imagens utilizadss no projeto
-   ├── GIFs                                                   #GIFs utilizados no projeto
+   ├── audios                                                 #Audios utilizados no projeto
+   ├── imagens                                                #Imagens utilizadss no projeto
+   ├── gifs                                                   #GIFs utilizados no projeto
    src/                                                       # Código-fonte principal
    ├── backend/                                               # Pasta com os códigos de backend
    │   ├── Api.js/                                            # Arquivo JavaScript para portar a API
