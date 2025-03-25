@@ -74,7 +74,7 @@ Jogo_Fullstack/
 Antes de começar, certifique-se de ter instalado:
 - [GitHub Desktop](https://desktop.github.com/download/)
 - [Visual Studio Code](https://code.visualstudio.com/)
-- [Um navegador de sua preferência]
+- Um navegador de sua preferência
 
 ### 🛠️ Passo a Passo
 
