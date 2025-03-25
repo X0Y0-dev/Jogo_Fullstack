@@ -75,6 +75,7 @@ Jogo_Fullstack/
 Antes de começar, certifique-se de ter instalado:
 - [GitHub Desktop](https://desktop.github.com/download/)
 - [Visual Studio Code](https://code.visualstudio.com/)
+- [Um navegador de sua preferência]
 
 ### 🛠️ Passo a Passo
 
@@ -101,12 +102,16 @@ Antes de começar, certifique-se de ter instalado:
    Agora, clique no "index.html" que está dentro da pasta "Frontend" (em src) e, depois, clique em "Go Live".
    ```
 
+### 🖥 Extensões
+Todas as extensões foram baixadas diretamente pela aba de extensões do Visual Studio Code.
+1. JavaScripts (ES6) code snuppets - charalampos karypidis
+2. HTML CSS Support - ecmel
+3. Live Server - Ritwick Dey
+
 ## 🎓 Referências
 
 Aqui estão as referências usadas no projeto.
 
-1. https://www.institutocriativo.com.br/images/favicon.png
-2. https://institutocriativo.com.br/
-
-## Muito obrigado! 🙂
-~ TechTeam
+1. https://youtu.be/R1S_NhKkvGA?si=1CvxIFBu5EyMA1Ij
+2. https://dreamina.capcut.com
+3. https://opengameart.org/forums/audio
