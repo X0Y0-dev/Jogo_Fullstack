@@ -57,12 +57,12 @@ Jogo_Fullstack/
    ├── Final/                                                 # Versão final do jogo
    images/                                                    # Pasta para armazenar imagens utilizadas no projeto
    src/                                                       # Código-fonte principal
-   ├── Backend/                                               # Pasta com os códigos de backend
+   ├── backend/                                               # Pasta com os códigos de backend
    │   ├── Api.js/                                            # Arquivo JavaScript para portar a API
    │   ├── Funcoes.js/                                        # Arquivo JavaScript para as funções principais
    │   ├── oJogo.js/                                          # Arquivo JavaScript para portar a estrutura do jogo
    │   ├── Status.js/                                         # Arquivo JavaScript para os elementos do personagem principal
-   ├── Frontend/                                              # Pasta com os códigos de frontend
+   ├── frontend/                                              # Pasta com os códigos de frontend
    │   ├── style.css/                                         # Arquivos CSS para estilização
    │   ├── index.html                                         # Página principal do projeto
    readme.md                                                  # Documentação principal do projeto
