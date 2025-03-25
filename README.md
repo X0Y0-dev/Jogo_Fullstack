@@ -55,19 +55,16 @@ Jogo_Fullstack/
    ├── V3                                                     # Terceira versão do jogo.
    ├── V4                                                     # Quarta versão do jogo
    ├── Final/                                                 # Versão final do jogo
-   mídia/                                                     # Pasta para armazenar imagens utilizadas no projeto
-   ├── audios                                                 #Audios utilizados no projeto
-   ├── imagens                                                #Imagens utilizadss no projeto
-   ├── gifs                                                   #GIFs utilizados no projeto
-   src/                                                       # Código-fonte principal
-   ├── backend/                                               # Pasta com os códigos de backend
-   │   ├── Api.js/                                            # Arquivo JavaScript para portar a API
-   │   ├── Funcoes.js/                                        # Arquivo JavaScript para as funções principais
-   │   ├── oJogo.js/                                          # Arquivo JavaScript para portar a estrutura do jogo
-   │   ├── Status.js/                                         # Arquivo JavaScript para os elementos do personagem principal
-   ├── frontend/                                              # Pasta com os códigos de frontend
-   │   ├── style.css/                                         # Arquivos CSS para estilização
-   │   ├── index.html                                         # Página principal do projeto
+   Recursos/                                                  # Pasta para armazenar imagens utilizadas no projeto
+   │   ├── Audios                                             #Audios utilizados no projeto
+   │   ├── imagens                                            #Imagens utilizadss no projeto
+   │   ├── gifs                                               #GIFs utilizados no projeto
+   ├── Api.js/                                                # Arquivo JavaScript para portar a API
+   ├── Funcoes.js/                                            # Arquivo JavaScript para as funções principais
+   ├── oJogo.js/                                              # Arquivo JavaScript para portar a estrutura do jogo
+   ├── Status.js/                                             # Arquivo JavaScript para os elementos do personagem principal
+   ├── style.css                                             # Arquivos CSS para estilização
+   ├── index.html                                             # Página principal do projeto
    readme.md                                                  # Documentação principal do projeto
 ```
 
