@@ -103,7 +103,7 @@ Antes de começar, certifique-se de ter instalado:
 
 ### 🖥 Extensões
 Todas as extensões foram baixadas diretamente pela aba de extensões do Visual Studio Code.
-1. JavaScripts (ES6) code snuppets - charalampos karypidis
+1. JavaScripts (ES6) code snippets - charalampos karypidis
 2. HTML CSS Support - ecmel
 3. Live Server - Ritwick Dey
 
