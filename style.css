@@ -1,0 +1,700 @@
+/*
+
+██ ███    ██ ██ ███████ ██  ██████
+██ ████   ██ ██ ██      ██ ██    ██
+██ ██ ██  ██ ██ ██      ██ ██    ██
+██ ██  ██ ██ ██ ██      ██ ██    ██
+██ ██   ████ ██ ███████ ██  ██████
+
+*/
+
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(20, 20, 20, 0.9);
+}
+
+/*TELA DE FUNDO*/
+.Fundo {
+    display: flex;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    background-color: rgba(20, 20, 20, 1);
+}
+
+
+.TextoBranco {
+    color: rgb(255, 255, 255);
+    font-size: 2vh;
+    margin-top: 2vh;
+    text-align: left;
+}
+
+/*TÍTULO DE CAPÍTULOS*/
+.Titulo {
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    font-size: 7vw;
+    text-align: center;
+    opacity: 0;
+    color: azure;
+    animation: piscar 2s ease-in-out;
+}
+
+/*ANIMIAÇÃO DO TÍTULO*/
+@keyframes piscar {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    75% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+.TelaInicio {
+    position: relative;
+    left: 5vw;
+    width: 45vw;
+    min-width: fit-content;
+    min-height: fit-content;
+    height: 20vh;
+    background-color: rgb(35, 36, 35);
+    z-index: 1;
+    border-radius: 1vh;
+    border: 1vh solid rgba(124, 119, 119, 0.3);
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.TextoGrandeTelaInicio {
+    color: rgb(255, 255, 255);
+    font-size: 3vh;
+    margin-top: 2vh;
+    margin-left: 3vw;
+}
+
+/*RECEBE O VALOR DE 'NOME*/
+.InputTelaInicio {
+    position: relative;
+    width: 80%;
+    height: 20%;
+    background-color: rgba(20, 20, 20, 0.9);
+    z-index: 1;
+    border-radius: 1vh;
+    border: 0.4vh solid rgba(255, 255, 255, 0.37);
+    gap: 1vh;
+    margin-top: 4vh;
+    margin-left: 2vw;
+    padding-top: 0.1vh;
+    padding-bottom: 0.1vh;
+    padding-left: 0.5vh;
+    font-size: 4vh;
+    color: rgb(255, 255, 255);
+    bottom: 5vh;
+}
+
+
+.BotaoTelaInicio {
+    position: relative;
+    bottom: 7vh;
+    min-width: fit-content;
+    width: 20%;
+    height: 15%;
+    background-color: rgba(20, 20, 20, 0.9);
+    z-index: 1;
+    border-radius: 1vh;
+    border: 0.4vh solid rgba(255, 255, 255, 0.37);
+    gap: 1vh;
+    margin-top: 4vh;
+    margin-left: 2vw;
+    padding-top: 0.1vh;
+    padding-bottom: 0.1vh;
+    padding-left: 0.5vh;
+    font-size: 2vh;
+    color: rgb(255, 255, 255);
+}
+
+.BotaoTelaInicio:hover {
+    background-color: rgba(148, 41, 41, 0.9);
+    border: 0.4vh solid rgba(255, 255, 255, 0.37);
+    font-size: 2.2vh;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+
+
+
+
+/*
+
+███████  ██ ██████  ███████ ██ ██████████  ██████
+██    ██ ██ ██   ██ ██      ██     ██     ██    ██
+██    ██ ██ ██████  █████   ██     ██     ████████
+██    ██ ██ ██   ██ ██      ██     ██     ██    ██
+███████  ██ ██   ██ ███████ ██     ██     ██    ██
+
+*/
+
+.BarraLateralDireita {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    top: 0;
+    width: 15vw;
+    height: 100vh;
+    background-color: rgba(22, 22, 22, 0.9);
+}
+
+.OpçesDireita {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    gap: 12vh;
+    font-size: 1vw;
+    top: 10%;
+}
+
+
+.OpçesDireita a {
+    border-top: 0.2vw solid rgb(44, 44, 44);
+    border-left: 0vw solid rgb(63, 62, 62);
+    border-Right: 0.8vw solid rgb(17, 16, 16);
+    border-bottom: 0.4vw solid rgb(63, 62, 62);
+}
+
+.OpçesDireita a:hover {
+    cursor: pointer;
+    background-color: rgb(101, 74, 74)
+}
+
+
+
+
+
+/*
+
+███████ ███████  ██████   ███████ ██████  ███████   ██████
+██      ██      ██    ██  ██      ██   ██ ██    ██ ██    ██
+█████   ███████ ██    ██  █████   ██████  ██    ██ ████████
+██           ██  ██████   ██      ██   ██ ██    ██ ██    ██
+███████ ███████        ██ ███████ ██   ██ ███████  ██    ██
+
+*/
+.BarraLateralEsquerda {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 25vw;
+    height: 100vh;
+    background-color: rgba(22, 22, 22, 0.9);
+    border-right: 0.4vw solid rgb(17, 16, 16);
+}
+
+.OpçõesEsquerda {
+    display: flex;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 25vw;
+    height: 45vh;
+    border-top: 0.6vw solid rgb(32, 32, 32);
+    border-left: 1vw solid rgb(32, 32, 32);
+    border-Right: 0.6vw solid rgb(17, 16, 16);
+    cursor: default;
+}
+
+.OpçõesEsquerda div {
+    list-style-type: none;
+    text-align: center;
+    padding: 0.1vw;
+    font-size: 1.7vw;
+    cursor: default;
+    display: flex;
+    margin-right: 1vw;
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(192, 182, 182);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.OpçõesEsquerdaMenu {
+    display: flex;
+    flex-direction: column;
+    width: 93%;
+    height: 90%;
+    position: absolute;
+    left: 1vw;
+    top: 1.3vh;
+    gap: 20%;
+}
+
+.OpçõesEsquerdaMenu p {
+    flex-direction: column;
+    background-color: rgba(32, 28, 28, 0.9);
+    min-width: fit-content;
+    width: 22.4vw;
+    min-height: fit-content;
+    height: 2vh;
+    font-size: 1.3vw;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-top: 0.6vw solid rgb(32, 32, 32);
+    border-left: 0vw solid rgb(32, 32, 32);
+    border-Right: 0.8vw solid rgb(17, 16, 16);
+    top: 5vh;
+    position: absolute;
+}
+
+.OpçõesEsquerdaMenu button {
+    flex-direction: column;
+    background-color: rgba(32, 28, 28, 0.9);
+    width: 100%;
+    height: 13%;
+    font-size: 1.3vw;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-bottom: 0vw;
+    border-top: 0.6vw solid rgb(32, 32, 32);
+    border-left: 0vw solid rgb(32, 32, 32);
+    border-Right: 0.8vw solid rgb(17, 16, 16);
+}
+
+.OpçõesEsquerdaMenu {
+    display: none;
+}
+
+
+
+
+
+/*
+
+███████ ██████████  ██████  ██████████ ██    ██ ███████ 
+██          ██     ██    ██     ██     ██    ██ ██
+███████     ██     ████████     ██     ██    ██ ███████ 
+     ██     ██     ██    ██     ██     ██    ██      ██
+███████     ██     ██    ██     ██      ██████  ███████
+
+*/
+.Caixastatus {
+    display: block;
+    position: relative;
+    width: 94.2%;
+    height: 50%;
+    bottom: 0.1vh;
+    left: 50%;
+    top: 24%;
+    transform: translate(-50%, -50%);
+}
+
+.Caixastatus p {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0.1vh 0.1vh 0.1vh rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border-top: 0.6vw solid rgb(32, 32, 32);
+    border-left: 0vw solid rgb(32, 32, 32);
+    border-Right: 0.8vw solid rgb(17, 16, 16);
+}
+
+.Caixastatus .CaixaVida {
+    display: block;
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: 3vh;
+    bottom: 2vh;
+}
+
+.vida {
+    position: absolute;
+    display: block;
+    height: 3vh;
+    background-color: rgb(141, 26, 26);
+    border-top: 0.4vh solid rgba(250, 220, 220, 0.37);
+    border-bottom: 0.4vh solid rgba(195, 213, 206, 0.37);
+    border-radius: 1vh;
+    width: 0%;
+}
+
+.vida .TextoVida {
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0.1vh 0.1vh 0.1vh rgb(0, 0, 0);
+    font-size: 3vw;
+    color: rgb(255, 255, 255);
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 3vh;
+}
+
+.Caixastatus .ouro {
+    position: relative;
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 2vh;
+    border-radius: 1vh;
+    bottom: 2vh;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0.2vh 0.2vh 0.1vh rgb(3, 3, 3);
+    color: rgb(209, 223, 8);
+    font-size: 1.8vw;
+}
+
+.Caixastatus p {
+    position: relative;
+    display: block;
+    text-align: center;
+    font-size: 1.8vw;
+    color: rgb(255, 255, 255);
+    font-size: 1.8vw;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.TextStatus {
+    position: absolute;
+    width: 10vw;
+    height: 10vh;
+    bottom: 0.1vh;
+    left: 50%;
+    top: 7vh;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 10vw;
+    color: rgb(255, 255, 255);
+    font-size: 1.8vw;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+
+
+/*
+
+██ ███    ██ ██    ██ ███████ ███    ██ ██████████  ██████  ██████  ██  ██████
+██ ████   ██ ██    ██ ██      ████   ██     ██     ██    ██ ██   ██ ██ ██    ██
+██ ██ ██  ██ ██    ██ █████   ██ ██  ██     ██     ████████ ██████  ██ ██    ██
+██ ██  ██ ██  ██  ██  ██      ██  ██ ██     ██     ██    ██ ██   ██ ██ ██    ██
+██ ██   ████   ████   ███████ ██   ████     ██     ██    ██ ██   ██ ██  ██████
+
+*/
+
+.CaixaInventario {
+    z-index: 1;
+    display: grid;
+    visibility: hidden;
+    position: absolute;
+    left: 30vw;
+    width: 50%;
+    margin: auto;
+    height: 70vh;
+    background-color: rgb(34, 33, 33);
+    border: 0.6vh solid rgba(102, 98, 98, 0.37);
+}
+
+.CaixaInventario.animar {
+    animation: Sumiraparecer 1s ease-in-out forwards;
+}
+
+.CaixaInventario.visivel {
+    visibility: visible;
+}
+
+@keyframes Sumiraparecer {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        height: 0vh;
+    }
+
+    50% {
+        height: 75vh;
+    }
+
+    75% {
+        height: 70vh;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.Inventario {
+    position: relative;
+    display: flex;
+    flex-direction: column row;
+    flex-wrap: nowrap;
+    grid-template-columns: 1fr 1fr 1fr;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: white;
+    font-style: italic;
+    font-size: 1.2vw;
+}
+
+.Inventario img {
+    width: 20%;
+    height: 40%;
+    margin-left: 0%;
+    top: 36%;
+    color: white;
+    font-style: italic;
+    font-size: 1.2vw;
+    position: absolute;
+}
+
+.Inventario p {
+    grid-column: 1/4;
+    border-bottom: 0.3vh solid rgba(255, 255, 255, 0.37);
+    border-top: 0.3vh solid rgba(255, 255, 255, 0.37);
+}
+
+.Inventario span {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-style: italic;
+    font-size: 1.2vw;
+    top: -1%;
+}
+
+.Inventario a {
+    width: 70%;
+    height: 40%;
+    margin: auto;
+    left: 25%;
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-style: italic;
+    font-size: 1.2vw;
+    bottom: 8vh;
+}
+
+
+/*BOTÃO DE FECHAR O INVENTÁRIO*/
+.XdoClose {
+    position: absolute;
+    left: 97.5%;
+    background-color: red;
+    width: 1.2vw;
+    height: 2.3vh;
+    font-size: 100%;
+    border-top: 0.15vw solid rgb(187, 68, 68);
+    border-left: 0.15vw solid rgb(160, 23, 23);
+}
+
+
+
+
+
+/*
+
+██████████ ███████ ██      ██ ██████████  ██████
+    ██     ██        ██  ██       ██     ██    ██
+    ██     █████       ██         ██     ██    ██
+    ██     ██        ██  ██       ██     ██    ██
+    ██     ███████ ██      ██     ██      ██████ 
+
+*/
+
+.CaixaTextoJogo {
+    position: absolute;
+    width: 55vw;
+    height: 80vh;
+    top: 2vh;
+    left: 28vw;
+    overflow-y: scroll;
+}
+
+.TextoJogo {
+    font-size: 1.1vw;
+    color: rgb(178, 170, 170);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    font-style: italic;
+    line-height: 3.5vh;
+    overflow: hidden;
+}
+
+.TextoJogo img {
+    min-width: 80%;
+    min-height: 15vh;
+    max-height: 30vh;
+    margin: auto;
+    position: relative;
+    display: block;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+
+
+
+/*
+
+███████ ███████ ██████   ██████  ██      ██      ███████   ██████  ██████
+██      ██      ██   ██ ██    ██ ██      ██      ██    ██ ██    ██ ██   ██
+███████ ██      ██████  ██    ██ ██      ██      ███████  ████████ ██████
+     ██ ██      ██   ██ ██    ██ ██      ██      ██    ██ ██    ██ ██   ██
+███████ ███████ ██   ██  ██████  ███████ ███████ ███████  ██    ██ ██   ██
+
+*/
+
+.CaixaTextoJogo::-webkit-scrollbar {
+    position: absolute;
+    display: block;
+    background-color: rgb(178, 170, 170);
+    border-radius: 0.5vh;
+    border-Right: 0.2vw solid rgba(18, 18, 18, 0.3);
+    width: 0.3vw;
+    transition: 1s;
+}
+
+.CaixaTextoJogo::-webkit-scrollbar-thumb {
+    background-color: rgba(36, 35, 35, 0.8);
+    border-Right: 0.1vw solid rgba(15, 8, 44, 0.1);
+    border-radius: 1vh;
+    transition: 1s;
+}
+
+.CaixaTextoJogo::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(36, 35, 35, 0.7);
+    border-Right: 0.1vw solid rgba(15, 8, 44, 0.1);
+    transition: 1s;
+}
+
+
+
+
+
+
+/*
+
+███████ ███████ ███████  ██████  ██      ██    ██  ██████  ███████
+██      ██      ██      ██    ██ ██      ██    ██ ██    ██ ██
+█████   ███████ ██      ██    ██ ██      ████████ ████████ ███████ 
+██           ██ ██      ██    ██ ██      ██    ██ ██    ██      ██
+███████ ███████ ███████  ██████  ███████ ██    ██ ██    ██ ███████  
+ 
+*/
+
+.CaixaEscolhas {
+    position: absolute;
+    width: 80vw;
+    height: 8vh;
+    bottom: 2vh;
+    left: 54vw;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-wrap: normal;
+}
+
+
+.Escolhas {
+    background-color: rgba(22, 22, 22, 0.9);
+    border-top: 0.6vw solid rgb(58, 54, 54);
+    border-right: 0.6vw solid rgb(14, 10, 10);
+    border-left: 0cap;
+    border-bottom: 0cap;
+    min-width: 15vw;
+    width: fit-content;
+    max-width: min-content;
+    height: 12vh;
+    transition: 0.001s;
+    cursor: pointer;
+    font-size: 1.3vw;
+    font-weight: bold;
+    color: #d9dfe4;
+    padding: 1vh;
+    letter-spacing: 0.2vw;
+}
+
+.Escolhas:hover {
+    background-color: rgba(51, 50, 50, 0.7);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.Escolhas:active {
+    background-color: rgba(113, 113, 128, 0.7);
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+
+
+/*
+
+ ██████  ███████  ██
+██    ██ ██    ██ ██
+████████ ███████  ██
+██    ██ ██       ██
+██    ██ ██       ██
+
+*/
+.conselho {
+    font-style: italic;
+    font-size: 1.2vw;
+    color: aquamarine;
+}
+
+.ConselhoVida {
+    position: absolute;
+    width: 90%;
+    left: 50%;
+    top: 80vh;
+    transform: translate(-50%, -50%);
+    height: 20vh;
+    text-align: center;
+    color: rgb(195, 175, 175);
+    font-style: italic;
+    font-size: 1.2vw;
+}
